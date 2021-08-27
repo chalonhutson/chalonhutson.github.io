@@ -20,10 +20,15 @@ a:link {
     text-decoration: none;
   }
 
+  
+  /* ----- For Desktop ----- */
+@media only screen and (min-width: 768px) {
+      
+
 h1, h2 {
     font-family: "Arimo";
     color: #75BBA7;
-   font-size: 25pt;
+    font-size: 25pt;
 }
 
 #myName {
@@ -44,6 +49,7 @@ h3, p {
 .skillContainers {
     font-size: 18pt;
 }
+
 
 body {
     background-color: #EDDDD4;
@@ -138,3 +144,148 @@ main {
     
 }
 
+}
+
+
+  /* ----- For Mobile ----- */
+@media only screen and (max-width: 768px) {
+    
+
+h1, h2 {
+    font-family: "Arimo";
+    color: #75BBA7;
+    font-size: 15pt;
+}
+
+#myName {
+    font-size: 10pt;
+}
+
+#myBrand {
+    font-size: 6pt;
+    font-style: italic;
+    font-weight: 400;
+}
+
+h3, p {
+    font-family: "Open Sans Condensed";
+    color: #EDDDD4;
+}
+
+.skillContainers {
+    font-size: 10pt;
+}
+
+
+body {
+    background-color: #EDDDD4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #004966;
+
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 65px;
+}
+
+#headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 15px;
+
+    width: 100%;
+}
+
+#headerLinksContainer {
+    font-size: 8pt;
+    display: flex;
+}
+
+.headerLinks {
+    padding-right: 20px;
+}
+
+/* #brandContainer {
+    */
+/* } */
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #283D3B;
+    padding: 75px 20px 50px 20px;
+    width: 100vw;
+    /* scroll-behavior: smooth; */
+}
+
+/* #aboutMe {
+
+} */
+
+#headshot {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+
+    margin: 50px 0px;
+
+}
+
+
+.sectionContainers {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+#skillListContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+#aboutMeText {
+    max-width: 75%;
+    font-size: 10pt;
+    padding-top: 10px;
+}
+
+.separator {
+    font-size: 10pt;
+}
+
+.projectVideos {
+    width: 350px;
+    height: 197px;
+
+}
+
+
+#linkedin {
+    width: 100px;
+    
+}
+
+
+};
